@@ -6,10 +6,8 @@ import { registerLicense } from "@syncfusion/ej2-base";
 import { ContextProvider } from "./contexts/ContextProvider";
 
 // Registering Syncfusion<sup style="font-size:70%">&reg;</sup>  license key
-registerLicense(
-  "Ngo9BigBOggjHTQxAR8/V1NMaF5cXmBCf1FpRmJGdld5fUVHYVZUTXxaS00DNHVRdkdmWX5cc3RQQ2RZWUF2WEI="
-);
-
+const syncfusionKey = process.env.REACT_APP_SYNCFUSION_KEY;
+registerLicense(syncfusionKey);
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <ContextProvider>
