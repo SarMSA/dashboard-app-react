@@ -5,7 +5,7 @@ import { IoIosMore } from "react-icons/io";
 import { DropDownListComponent } from "@syncfusion/ej2-react-dropdowns";
 
 import { Stacked, Pie, Button, LineChart } from "../components";
-import SparkLine from "../components/Charts/SparkLine";
+import SparkLine from "../components/Charts/SparkLine.jsx";
 import {
   earningData,
   medicalproBranding,
