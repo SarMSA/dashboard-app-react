@@ -4,7 +4,8 @@ import { GoDotFill } from "react-icons/go";
 import { IoIosMore } from "react-icons/io";
 import { DropDownListComponent } from "@syncfusion/ej2-react-dropdowns";
 
-import { Stacked, Pie, Button, LineChart, SparkLine } from "../components";
+import { Stacked, Pie, Button, LineChart } from "../components";
+import SparkLine from "../components/Charts/SparkLine";
 import {
   earningData,
   medicalproBranding,
