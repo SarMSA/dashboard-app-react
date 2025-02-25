@@ -26,7 +26,19 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+
+    - name: rm -rf node_modules package-lock.json
+      run: rm -rf node_modules package-lock.json
+
+    - name: npm cache clean --force
+      run: npm cache clean --force
+
     - name: Install Dependencies
       run: npm install
+
+    - name: export NODE_OPTIONS="--max_old_space_size=4096"
+      run: export NODE_OPTIONS="--max_old_space_size=4096"
+
+
     - name: Build
       run: npm run build
