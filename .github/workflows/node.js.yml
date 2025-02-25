@@ -40,5 +40,8 @@ jobs:
       run: export NODE_OPTIONS="--max_old_space_size=4096"
 
 
+    - name: Kill node
+      run: pkill -f node
+
     - name: Build
       run: npm run build
